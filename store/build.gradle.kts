@@ -15,7 +15,7 @@ android {
     }
 
     defaultConfig {
-        buildConfigField("String", "APPLICATION_ID", "\"com.tonnom.zafiro\"")
+        buildConfigField("String", "APPLICATION_ID", "\"com.neckcrack.app\"")
     }
 
     compileOptions {
