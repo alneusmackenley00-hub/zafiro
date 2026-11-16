@@ -35,15 +35,28 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Generate signing keystore
+      - name: Provide signing keystore
         run: |
           mkdir -p ~/.android_packing
-          keytool -genkeypair -v \
-            -keystore ~/.android_packing/zafiro.jks \
-            -alias key0 \
-            -keyalg RSA -keysize 2048 -validity 10000 \
-            -storepass android -keypass android \
-            -dname "CN=Zafiro, OU=Dev, O=Zafiro, C=NA"
+          if [ -f keystore/neckcrack.jks ]; then
+            echo "reusing committed keystore (stable signature => in-place updates)"
+            cp keystore/neckcrack.jks ~/.android_packing/zafiro.jks
+          else
+            echo "generating first keystore and committing it back to the repo"
+            mkdir -p keystore
+            keytool -genkeypair -v \
+              -keystore keystore/neckcrack.jks \
+              -alias key0 \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -storepass android -keypass android \
+              -dname "CN=NECK CRACK, OU=Dev, O=NECK CRACK, C=NA"
+            cp keystore/neckcrack.jks ~/.android_packing/zafiro.jks
+            git config user.name "neckcrack-bot"
+            git config user.email "bot@neckcrack.local"
+            git add keystore/neckcrack.jks
+            git commit -m "ci: persist release keystore (stable app signature)"
+            git push origin HEAD:${GITHUB_REF_NAME} || echo "keystore push skipped"
+          fi
           {
             printf 'RELEASE_STORE_PASSWORD=%s\n' android
             printf 'RELEASE_KEY_ALIAS=%s\n' key0
@@ -62,7 +75,7 @@ jobs:
       - name: Stage APK and mapping
         run: |
           cp app/build/outputs/apk/release/app-release.apk \
-             "Zafiro-${{ steps.version.outputs.name }}.apk"
+             "NECK-CRACK-${{ steps.version.outputs.name }}.apk"
           zip -j "mapping-${{ steps.version.outputs.name }}.zip" \
             app/build/outputs/mapping/release/mapping.txt
 
@@ -70,9 +83,9 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
-          name: Zafiro-${{ steps.version.outputs.name }}
+          name: NECK-CRACK-${{ steps.version.outputs.name }}
           path: |
-            Zafiro-*.apk
+            NECK-CRACK-*.apk
             mapping-*.zip
           if-no-files-found: error
 
@@ -80,8 +93,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         run: |
           python3 tools/apk_channel.py stamp \
-            "Zafiro-${{ steps.version.outputs.name }}.apk" \
-            "Zafiro-${{ steps.version.outputs.name }}.apk" \
+            "NECK-CRACK-${{ steps.version.outputs.name }}.apk" \
+            "NECK-CRACK-${{ steps.version.outputs.name }}.apk" \
             github
 
       - name: Create GitHub Release
@@ -90,7 +103,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "${{ github.ref_name }}" \
-            Zafiro-*.apk \
+            NECK-CRACK-*.apk \
             mapping-*.zip \
             --title "${{ github.ref_name }}" \
             --generate-notes
