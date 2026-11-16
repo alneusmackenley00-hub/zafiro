@@ -372,7 +372,7 @@
     <string name="mcp_field_url_hint">Ejemplo: https://a.b.c/mcp</string>
     <string name="mcp_field_enabled">Activar servicio</string>
     <string name="mcp_field_headers">Encabezados personalizados</string>
-    <string name="mcp_field_headers_hint">{\n  \\"Authorization\\": \\"Bearer xxx\\"\n}</string>
+    <string name="mcp_field_headers_hint">{\n  \"Authorization\": \"Bearer xxx\"\n}</string>
     <string name="mcp_save_action">Guardar servidor MCP</string>
     <string name="mcp_error_name_required">Introduzca un nombre</string>
     <string name="mcp_error_name_duplicate">El nombre ya existe. Elija otro nombre.</string>

@@ -145,11 +145,11 @@
     <string name="skill_error_load_failed">Failed to load Skills: %1$s</string>
     <string name="skill_error_save_failed">Failed to save Skill: %1$s</string>
     <string name="skill_delete_dialog_title">Delete Skill</string>
-    <string name="skill_delete_dialog_text">Are you sure you want to delete the Skill \\"%1$s\\"? This action cannot be undone.</string>
+    <string name="skill_delete_dialog_text">Are you sure you want to delete the Skill \"%1$s\"? This action cannot be undone.</string>
     <string name="skill_error_delete_failed">Failed to delete Skill: %1$s</string>
     <string name="skill_import_no_skill_file">SKILL.md not found in the selected folder, cannot import</string>
     <string name="skill_import_conflict_title">Duplicate Skill</string>
-    <string name="skill_import_conflict_text">The Skill \\"%1$s\\" already exists. Overwrite it?</string>
+    <string name="skill_import_conflict_text">The Skill \"%1$s\" already exists. Overwrite it?</string>
     <string name="skill_import_overwrite">Overwrite</string>
     <string name="skill_import_cancel">Cancel</string>
     <string name="skill_import_resolve_failed">Unable to access the selected folder</string>
@@ -188,7 +188,7 @@
     <string name="ui_settings_storage_other_cache_summary">Temporary files from normal app operation</string>
     <string name="ui_settings_storage_loading">Measuring storage...</string>
     <string name="ui_settings_storage_clear_dialog_title">Clear cache</string>
-    <string name="ui_settings_storage_clear_dialog_text">Clear \\"%1$s\\"? This action cannot be undone.</string>
+    <string name="ui_settings_storage_clear_dialog_text">Clear \"%1$s\"? This action cannot be undone.</string>
     <string name="ui_settings_storage_clear_dialog_confirm">Clear</string>
     <string name="ui_settings_storage_clear_dialog_cancel">Cancel</string>
     <string name="ui_settings_storage_error_load_failed">Failed to measure storage: %1$s</string>
@@ -224,7 +224,7 @@
     <string name="ui_settings_env_context_key_time">Time</string>
     <string name="ui_settings_env_context_key_device">Device Status</string>
     <string name="ui_settings_env_context_group_custom">Custom Variables</string>
-    <string name="ui_settings_env_context_empty_custom">No custom variables. Tap \\'+\\' in the top right to add.</string>
+    <string name="ui_settings_env_context_empty_custom">No custom variables. Tap \'+\' in the top right to add.</string>
     <string name="ui_settings_env_context_variable_title_create">Add Variable</string>
     <string name="ui_settings_env_context_variable_description">Add static context attached to messages. The name is for management, and the model reads the content configured here in each turn.</string>
     <string name="ui_settings_env_context_field_name">Name</string>
@@ -234,7 +234,7 @@
     <string name="ui_settings_env_context_field_content_hint">Enter text to attach with messages</string>
     <string name="ui_settings_env_context_save_action">Save Variable</string>
     <string name="ui_settings_env_context_delete_dialog_title">Delete Variable</string>
-    <string name="ui_settings_env_context_delete_dialog_text">Are you sure you want to delete variable \\"%1$s\\"?</string>
+    <string name="ui_settings_env_context_delete_dialog_text">Are you sure you want to delete variable \"%1$s\"?</string>
     <string name="ui_settings_env_context_error_key_required">Name cannot be empty</string>
     <string name="ui_settings_env_context_error_key_reserved">Cannot use reserved names: date, time, device</string>
     <string name="ui_settings_env_context_error_key_duplicate">Name already exists, please choose another</string>
@@ -248,7 +248,7 @@
     <string name="memory_editor_title_create">New Memory</string>
     <string name="memory_editor_title_edit">Edit Memory</string>
     <string name="memory_field_content">Enter content</string>
-    <string name="memory_field_content_hint">For example: The user\\'s birthday is Month X Day Y</string>
+    <string name="memory_field_content_hint">For example: The user\'s birthday is Month X Day Y</string>
     <string name="memory_save_action">Save Memory</string>
     <string name="memory_cancel_action">Cancel</string>
     <string name="memory_delete_dialog_title">Delete Memory</string>
@@ -265,7 +265,7 @@
     <string name="execution_rules_loading">Loading execution rules...</string>
     <string name="execution_rules_editor_title_create">New Execution Rule</string>
     <string name="execution_rules_delete_dialog_title">Delete Execution Rule</string>
-    <string name="execution_rules_delete_dialog_text">Are you sure you want to delete the execution rule \\"%1$s\\"? This action cannot be undone.</string>
+    <string name="execution_rules_delete_dialog_text">Are you sure you want to delete the execution rule \"%1$s\"? This action cannot be undone.</string>
     <string name="execution_rules_editor_description">Set up rules for Shell and tool execution. For now, this editor lets you manage rule drafts in the UI and is not yet wired into the actual interception flow.</string>
     <string name="execution_rules_field_name">Rule Name</string>
     <string name="execution_rules_field_name_hint">For example: Dangerous delete commands</string>
@@ -313,7 +313,7 @@
     <string name="takeover_error_save_failed">Failed to save takeover rules: %1$s</string>
     <string name="takeover_error_delete_failed_generic">Failed to delete takeover rules</string>
     <string name="takeover_delete_dialog_title">Delete Takeover Rule</string>
-    <string name="takeover_delete_dialog_text">Are you sure you want to delete the takeover rule \\"%1$s\\"? This action cannot be undone.</string>
+    <string name="takeover_delete_dialog_text">Are you sure you want to delete the takeover rule \"%1$s\"? This action cannot be undone.</string>
     <string name="takeover_error_delete_failed">Failed to delete takeover rules: %1$s</string>
     <string name="tool_page_description">Turn tools on or off. Changes take effect in the next conversation.</string>
     <string name="tool_loading">Loading tool status...</string>
@@ -349,7 +349,7 @@
     <string name="custom_py_tool_error_save_failed">Failed to save Python tool: %1$s</string>
     <string name="custom_py_tool_error_delete_failed">Failed to delete Python tool: %1$s</string>
     <string name="custom_py_tool_delete_dialog_title">Delete Python Tool</string>
-    <string name="custom_py_tool_delete_dialog_text">Are you sure you want to delete the tool \\"%1$s\\"? This action cannot be undone.</string>
+    <string name="custom_py_tool_delete_dialog_text">Are you sure you want to delete the tool \"%1$s\"? This action cannot be undone.</string>
     <string name="custom_py_tool_save_dialog_checking_title">Checking Tool Code</string>
     <string name="custom_py_tool_save_dialog_checking_text">The check extracts the main() parameter signature and may take a few seconds.\n\nYou can cancel; nothing is saved if you do.</string>
     <string name="custom_py_tool_save_dialog_success_title">Tool Saved</string>
@@ -372,7 +372,7 @@
     <string name="mcp_field_url_hint">For example: https://a.b.c/mcp</string>
     <string name="mcp_field_enabled">Enable Service</string>
     <string name="mcp_field_headers">Custom Headers</string>
-    <string name="mcp_field_headers_hint">{\n  \\"Authorization\\": \\"Bearer xxx\\"\n}</string>
+    <string name="mcp_field_headers_hint">{\n  \"Authorization\": \"Bearer xxx\"\n}</string>
     <string name="mcp_save_action">Save MCP Server</string>
     <string name="mcp_error_name_required">Please enter a name</string>
     <string name="mcp_error_name_duplicate">This name already exists. Please choose another one and try again</string>
@@ -677,5 +677,5 @@
     <string name="masking_rules_error_delete_failed_generic">Failed to delete masking rule</string>
     <string name="masking_rules_error_delete_failed">Failed to delete masking rule: %1$s</string>
     <string name="masking_rules_delete_dialog_title">Delete Masking Rule</string>
-    <string name="masking_rules_delete_dialog_text">Are you sure you want to delete the masking rule \\"%1$s\\"? This action cannot be undone.</string>
+    <string name="masking_rules_delete_dialog_text">Are you sure you want to delete the masking rule \"%1$s\"? This action cannot be undone.</string>
 </resources>
