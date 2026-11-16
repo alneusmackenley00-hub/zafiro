@@ -100,42 +100,8 @@ class AboutSettingsViewModel :
 }
 
 private fun aboutSettingsItems(): List<AboutSettingsItemUiState> {
-    return listOf(
-        AboutSettingsItemUiState(
-            id = AboutSettingsItemId.AuthorHomepage,
-            titleRes = R.string.ui_settings_about_author_homepage,
-            uri = "https://github.com/niki914",
-        ),
-        AboutSettingsItemUiState(
-            id = AboutSettingsItemId.Github,
-            titleRes = R.string.ui_settings_about_github,
-            uri = "https://github.com/niki914/zafiro",
-        ),
-        AboutSettingsItemUiState(
-            id = AboutSettingsItemId.Afdian,
-            titleRes = R.string.ui_settings_about_afdian,
-            uri = "https://afdian.com/a/niki914",
-        ),
-        AboutSettingsItemUiState(
-            id = AboutSettingsItemId.Telegram,
-            titleRes = R.string.ui_settings_about_telegram,
-            uri = "https://t.me/+ZPX2xtSl6RwyZGNl",
-        ),
-        AboutSettingsItemUiState(
-            id = AboutSettingsItemId.FeatureFeedback,
-            titleRes = R.string.ui_settings_about_feedback_feature,
-            uri = null,
-            bodyTemplateRes = R.string.feedback_feature_template,
-            feedbackTitle = FEATURE_FEEDBACK_TITLE,
-        ),
-        AboutSettingsItemUiState(
-            id = AboutSettingsItemId.BugFeedback,
-            titleRes = R.string.ui_settings_about_feedback_bug,
-            uri = null,
-            bodyTemplateRes = R.string.feedback_bug_template,
-            feedbackTitle = BUG_FEEDBACK_TITLE,
-        ),
-    )
+    // NECK CRACK: developer/community links removed on purpose.
+    return emptyList()
 }
 
 internal fun buildIssueUri(title: String, body: String): String {

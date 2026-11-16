@@ -73,14 +73,9 @@ private const val LANGUAGE_ROW_ID = "theme.language"
 private const val MARKDOWN_SCALE_ROW_ID = "theme.markdown_scale"
 private const val THEME_STYLE_ROW_ID = "theme.style"
 
-private const val LANGUAGE_TAG_ZH_CN = "zh-CN"
-private const val LANGUAGE_TAG_ZH_TW = "zh-TW"
+private const val LANGUAGE_TAG_FR = "fr"
 private const val LANGUAGE_TAG_EN = "en"
 private const val LANGUAGE_TAG_ES = "es"
-private const val LANGUAGE_TAG_JA = "ja"
-private const val LANGUAGE_TAG_RU = "ru"
-private const val LANGUAGE_TAG_AR = "ar"
-private const val LANGUAGE_TAG_FA = "fa"
 
 /**
  * 引导外观页标题下的说明，同一行。
@@ -177,14 +172,9 @@ private fun languageOptions(): List<LanguageOption> {
             tag = "",
             label = stringResource(R.string.ui_settings_general_language_follow_system)
         ),
-        LanguageOption(tag = LANGUAGE_TAG_ZH_CN, label = "简体中文"),
-        LanguageOption(tag = LANGUAGE_TAG_ZH_TW, label = "繁體中文"),
+        LanguageOption(tag = LANGUAGE_TAG_FR, label = "Français"),
         LanguageOption(tag = LANGUAGE_TAG_EN, label = "English"),
         LanguageOption(tag = LANGUAGE_TAG_ES, label = "Español"),
-        LanguageOption(tag = LANGUAGE_TAG_JA, label = "日本語"),
-        LanguageOption(tag = LANGUAGE_TAG_RU, label = "Русский"),
-        LanguageOption(tag = LANGUAGE_TAG_AR, label = "العربية"),
-        LanguageOption(tag = LANGUAGE_TAG_FA, label = "فارسی"),
     )
 }
 

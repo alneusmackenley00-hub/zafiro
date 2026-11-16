@@ -20,11 +20,11 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.tonnom.zafiro"
+        applicationId = "com.neckcrack.app"
         minSdk = 26
         targetSdk = 34
-        versionName = "1.11.0"
-        versionCode = 19
+        versionName = "1.0.0"
+        versionCode = 1
         buildConfigField("String", "TELEMETRY_BASE_URL", "\"https://zafiro-telemetry.niki27687.workers.dev\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 

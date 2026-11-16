@@ -54,7 +54,7 @@ class App : Application() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         DynamicColors.applyToActivitiesIfAvailable(this)
         applicationScope.launch {
-            UpdateCheckHolder.runOnce(BuildConfig.VERSION_NAME)
+            // Update check disabled: NECK CRACK ships without upstream release polling.
         }
         StartupWrites.track(
             applicationScope,

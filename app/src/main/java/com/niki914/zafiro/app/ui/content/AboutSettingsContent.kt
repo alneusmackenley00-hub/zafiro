@@ -146,7 +146,7 @@ private fun AboutSettingsContentBody(
                 )
                 ZafiroDialogButton(
                     text = stringResource(R.string.ui_settings_about_telemetry_dialog_positive),
-                    onClick = onPrivacyDialogViewDoc,
+                    onClick = onPrivacyDialogDismiss,
                     isPrimary = true,
                 )
             },
