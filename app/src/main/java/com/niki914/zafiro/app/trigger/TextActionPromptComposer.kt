@@ -10,7 +10,7 @@ object TextActionPromptComposer {
 
     private const val NOTE_LINE = "> [NOTE]: The text below was copied from another app."
     private const val CAPTURE_FAILED_NOTE_LINE =
-        "> [NOTE]: Zafiro's screen capture failed; no screenshot is attached."
+        "> [NOTE]: NECK CRACK's screen capture failed; no screenshot is attached."
 
     /**
      * @param template 动作提示词，如 "Translate the following text into English."

@@ -5,5 +5,5 @@
         系统菜单里会并排出现两条，靠文案区分。定义为 debug 专属 key，任何语种都没有本地化子项，
         因此各 locale 一律显示这一串。
     -->
-    <string name="text_action_menu_label_debug" translatable="false">Zafiro Debug</string>
+    <string name="text_action_menu_label_debug" translatable="false">NECK CRACK Debug</string>
 </resources>

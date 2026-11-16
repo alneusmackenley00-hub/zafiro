@@ -52,8 +52,8 @@ open class PhoneScreenAccess(
         if (permissions().status(Permission.ACCESSIBILITY) != PermissionState.GRANTED) {
             return PhoneScreenDenial(
                 code = "ACCESSIBILITY_UNAVAILABLE",
-                message = "The Zafiro accessibility service is not available. " +
-                    "Enable Zafiro in Settings > Accessibility, then retry.",
+                message = "The NECK CRACK accessibility service is not available. " +
+                    "Enable NECK CRACK in Settings > Accessibility, then retry.",
             )
         }
         return PhoneScreenDenial(
