@@ -128,6 +128,8 @@ private class TerminalController(private val context: Context) : TerminalSession
 
     override fun onTerminalCursorStateChange(state: Boolean) = Unit
 
+    override fun getTerminalCursorStyle(): Int = 0
+
     override fun onScale(scale: Float): Float {
         val next = (textSize * scale).toInt().coerceIn(6, 40)
         if (next == textSize) return 1.0f
