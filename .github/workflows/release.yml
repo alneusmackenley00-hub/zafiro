@@ -35,19 +35,19 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Setup signing credentials
-        env:
-          KEYSTORE_BASE64: ${{ secrets.SIGNING_KEYSTORE_BASE64 }}
-          STORE_PW: ${{ secrets.SIGNING_STORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
-          KEY_PW: ${{ secrets.SIGNING_KEY_PASSWORD }}
+      - name: Generate signing keystore
         run: |
           mkdir -p ~/.android_packing
-          printf '%s' "$KEYSTORE_BASE64" | base64 -d > ~/.android_packing/zafiro.jks
+          keytool -genkeypair -v \
+            -keystore ~/.android_packing/zafiro.jks \
+            -alias key0 \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass android -keypass android \
+            -dname "CN=Zafiro, OU=Dev, O=Zafiro, C=NA"
           {
-            printf 'RELEASE_STORE_PASSWORD=%s\n' "$STORE_PW"
-            printf 'RELEASE_KEY_ALIAS=%s\n' "$KEY_ALIAS"
-            printf 'RELEASE_KEY_PASSWORD=%s\n' "$KEY_PW"
+            printf 'RELEASE_STORE_PASSWORD=%s\n' android
+            printf 'RELEASE_KEY_ALIAS=%s\n' key0
+            printf 'RELEASE_KEY_PASSWORD=%s\n' android
           } > ~/.android_packing/signing.properties
 
       - name: Build signed release APK
