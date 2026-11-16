@@ -116,3 +116,9 @@
     java.lang.Object writeReplace();
     java.lang.Object readResolve();
 }
+
+
+# Termux terminal components: JNI binding + reflection on view internals.
+-keep class com.termux.terminal.** { *; }
+-keep class com.termux.view.** { *; }
+-keepclasseswithmembernames class * { native <methods>; }

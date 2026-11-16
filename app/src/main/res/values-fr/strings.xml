@@ -678,4 +678,6 @@
     <string name="masking_rules_error_delete_failed">Échec de la suppression de la règle de masquage : %1$s</string>
     <string name="masking_rules_delete_dialog_title">Supprimer la règle de masquage</string>
     <string name="masking_rules_delete_dialog_text">Êtes-vous sûr de vouloir supprimer la règle de masquage \"%1$s\" ? Cette action ne peut pas être annulée.</string>
+    <string name="ui_settings_terminal">Terminal</string>
+    <string name="ui_settings_terminal_summary">Shell local sur l\'appareil</string>
 </resources>

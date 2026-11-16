@@ -38,6 +38,11 @@ enum class ZafiroSettingsGroup(
         summaryRes = R.string.ui_settings_skills_summary,
         routeSuffix = "skills",
     ),
+    Terminal(
+        titleRes = R.string.ui_settings_terminal,
+        summaryRes = R.string.ui_settings_terminal_summary,
+        routeSuffix = "terminal",
+    ),
     Actions(
         titleRes = R.string.ui_settings_actions,
         summaryRes = R.string.ui_settings_actions_summary,

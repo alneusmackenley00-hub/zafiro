@@ -678,4 +678,6 @@
     <string name="masking_rules_error_delete_failed">Failed to delete masking rule: %1$s</string>
     <string name="masking_rules_delete_dialog_title">Delete Masking Rule</string>
     <string name="masking_rules_delete_dialog_text">Are you sure you want to delete the masking rule \"%1$s\"? This action cannot be undone.</string>
+    <string name="ui_settings_terminal">Terminal</string>
+    <string name="ui_settings_terminal_summary">Local shell on the device</string>
 </resources>

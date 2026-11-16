@@ -109,6 +109,8 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation(project(":libs:okia"))
+    implementation(project(":terminal-emulator"))
+    implementation(project(":terminal-view"))
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // Room

@@ -59,6 +59,11 @@ fun SettingsDetailPageContent(
         return
     }
 
+    if (group == ZafiroSettingsGroup.Terminal) {
+        TerminalSettingsContent()
+        return
+    }
+
     if (group == ZafiroSettingsGroup.Skills) {
         SkillsSettingsContent(
             onOpenSkillDetail = { id, title ->

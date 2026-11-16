@@ -69,3 +69,7 @@ include(":libs:libterm-backend-shizuku")
 project(":libs:libterm-backend-shizuku").projectDir = file("libs/libterm/libterm-backend-shizuku")
 include(":libs:libterm-backend-ssh")
 project(":libs:libterm-backend-ssh").projectDir = file("libs/libterm/libterm-backend-ssh")
+
+// Terminal: Termux 终端组件（AiCode 移植，含预编译 libtermux.so）
+include(":terminal-emulator")
+include(":terminal-view")

@@ -84,6 +84,7 @@ private fun settingsSections(): List<SettingsSectionDefinition> {
             groups = listOf(
                 ZafiroSettingsGroup.Tools,
                 ZafiroSettingsGroup.Skills,
+                ZafiroSettingsGroup.Terminal,
                 ZafiroSettingsGroup.Actions,
                 ZafiroSettingsGroup.Mcp,
                 ZafiroSettingsGroup.McpService,

@@ -678,4 +678,6 @@
     <string name="masking_rules_error_delete_failed">Error al eliminar la regla de enmascaramiento: %1$s</string>
     <string name="masking_rules_delete_dialog_title">Eliminar regla de enmascaramiento</string>
     <string name="masking_rules_delete_dialog_text">¿Está seguro de que desea eliminar la regla de enmascaramiento «%1$s»? Esta acción no se puede deshacer.</string>
+    <string name="ui_settings_terminal">Terminal</string>
+    <string name="ui_settings_terminal_summary">Shell local en el dispositivo</string>
 </resources>
